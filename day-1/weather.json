@@ -1,5 +1,18 @@
 {
-  "city": "Bengaluru",
-  "temperature": 28,
-  "condition": "Partly Cloudy"
+  "weather": [
+    {
+      "cityName": "Chennai",
+      "currentConditions": "Partly Cloudy",
+      "temperature": 32
+    },
+    {
+      "cityName": "Mumbai",
+      "currentConditions": "Sunny",
+      "temperature": 28
+    },
+    {"cityName":"bangalore",
+    "currentConditions": "cloudy",
+    "temperature":26 
+    }
+  ]
 }
