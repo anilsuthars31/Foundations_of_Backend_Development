@@ -9,8 +9,13 @@ emitter.on('fetch', () => {
       console.log('Error:', err.message);
       return;
     }
-    const weather = JSON.parse(data);
-    console.log('Temperature:', weather.temperature);
+    const weatherData = JSON.parse(data);
+    
+    // Access the weather array and display all cities
+    console.log('\nWeather Report:');
+    weatherData.weather.forEach(city => {
+      console.log(`${city.cityName}: ${city.currentConditions}, Temperature: ${city.temperature}°C`);
+    });
   });
 });
 
